@@ -12,12 +12,10 @@ module.exports = {
         assetsPublicPath: '/',
         proxyTable: {
             '/v8': {
-                target: "https://c.y.qq.com",//设置你调用的接口域名和端口号 别忘了加http
+                target: "https://c.y.qq.com",
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''
-                    //这里理解成用‘/v8'代替target里面的地址，后面组件中我们掉接口时直接用api代替
-                    //比如我要调用'http://40.00.100.133:3002/user/login'，直接写‘/api/user/login'即可
                 }
             },
             '/soso': {
@@ -54,7 +52,7 @@ module.exports = {
         },
         // Various Dev Server settings
         host: 'localhost', // can be overwritten by process.env.HOST
-        port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+        port: 8088, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
         autoOpenBrowser: false,
         errorOverlay: true,
         notifyOnErrors: true,
