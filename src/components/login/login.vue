@@ -42,8 +42,8 @@
     export default {
         data() {
             return {
-                userCode: '',
-                password: '',
+                userCode: 'chai',
+                password: '123',
                 data: {},
             }
         },
